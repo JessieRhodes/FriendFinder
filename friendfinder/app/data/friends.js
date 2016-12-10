@@ -1,0 +1,65 @@
+var newFriendsArray = [
+{
+  "name":"Rich Froning",
+  "photo":"http://www.bodybuilding.com/fun/images/2013/get-crossfit-1.jpg",
+  "scores":[
+     5,
+     1,
+     1,
+     4,
+     5,
+     3,
+     5,
+     5,
+     2,
+     1
+   ]
+}
+{
+  "name":"Sam Briggs",
+  "photo":"http://www.girlswithmuscle.com/images/full/471697213.jpg",
+  "scores":[
+     4,
+     1,
+     4,
+     3,
+     3,
+     1,
+     2,
+     5,
+     4,
+     5
+   ]
+}
+ "name":"Dan Bailey",
+  "photo":"http://roguefitness.com/slideshowpro/albums/album-251/lg/dan-bailey-web-1.jpg",
+  "scores":[
+     5,
+     1,
+     4,
+     4,
+     5,
+     3,
+     1,
+     5,
+     5,
+     1
+   ]
+}
+ "name":"Cara Webb",
+  "photo":"http://femcompetitor.com/wp-content/uploads/2016/02/kara-www.theaustralian.com_.au-249306-5527779a-c9fe-11e3-9189-cbcdb705af69.jpg",
+  "scores":[
+     3,
+     1,
+     1,
+     1,
+     5,
+     1,
+     2,
+     5,
+     3,
+     1
+   ]
+}
+];
+console.log(FriendsArray);

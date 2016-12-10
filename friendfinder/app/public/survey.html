@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CrossFit Celeb Finder Page</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> CrossFit Celeb Finder</h1>
+      <hr>
+      <h2 class="text-center">Find your celeb</h2>
+      <br>
+
+      <div class="text-center">
+        <a href="/friends"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span>View Celebs</button></a>
+        <a href="/"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+
+        <!-- Reservation Page -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Submit some info to find your CrossFit celeb</h4>
+          </div>
+          <div class="panel-body">
+
+            <form role="form">
+
+            	<div class="form-group">
+                	<label for="">Name</label>
+                	<input type="text" class="form-control" id="CF_name">
+            	</div>
+
+            	<div class="form-group">
+                	<label for="">Photo (provide a link)</label>
+                	<input type="text" class="form-control" id="CF_photo">
+            	</div>
+				<form>
+					<form> Q1. I enjoy short sprint workouts</form>
+			
+              			<select id="Q1" name="CFlist" form="CF_form">
+              				<option value="">select an option</option>
+  							<option value="1 (not really)">1 (not really) </option>
+ 							<option value="2">2</option>
+  							<option value="3">3</option>
+  							<option value="4">4</option>
+  							<option value="5">5 (100%)</option>
+						</select>
+					</form>	
+
+            <h2> Q2. </h2>
+			<div> I enjoy long, grinder workouts </div>
+              	<select id="Q2" name="CFlist" form="CF_form">
+              		<option value="">select an option</option>
+  					<option value="1 (not really)">1 (not really) </option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5 (100%)</option>
+				</select>
+				
+			<h2> Q3. </h2>
+            <div> I love partner WODs </div>
+              	<select id="Q3" name="CFlist" form="CF_form">
+              		<option value="">select an option</option>
+  					<option value="1 (not really)">1 (not really) </option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5 (100%)</option>
+				</select>
+
+            <h2> Q4. </h2>
+            <div> I work out in the evening </div>
+              	<select id="Q4" name="CFlist" form="CF_form">
+              		<option value="">select an option</option>
+  					<option value="1 (not really)">1 (not really) </option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5 (100%)</option>
+				</select>
+
+            <h2> Q5. </h2>
+            <div> I work out in the morning </div>
+              	<select id="Q5" name="CFlist" form="CF_form">
+              		<option value="">select an option</option>
+  					<option value="1 (not really)">1 (not really) </option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5 (100%)</option>
+				</select>
+            
+            <h2> Q6. </h2>
+            <div> I work out to look like Rich Froning </div>
+              	<select id="Q6" name="CFlist" form="CF_form">
+              		<option value="">select an option</option>
+  					<option value="1 (not really)">1 (not really) </option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5 (100%)</option>
+				</select>
+
+            <h2> Q7. </h2>
+            <div> I only work out because my friends do </div>
+              	<select id="Q7" name="CFlist" form="CF_form">
+              		<option value="">select an option</option>
+  					<option value="1 (not really)">1 (not really) </option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5 (100%)</option>
+				</select>
+
+            <h2> Q8. </h2>
+            <div> Wearing Reebok gear is essential </div>
+              	<select id="Q8" name="CFlist" form="CF_form">
+              		<option value="">select an option</option>
+  					<option value="1 (not really)">1 (not really) </option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5 (100%)</option>
+				</select>
+
+            <h2> Q9. </h2>
+            <div> Paleo is the only way to eat </div>
+              	<select id="Q9"  name="CFlist" form="CF_form">
+              		<option value="">select an option</option>
+  					<option value="1 (not really)">1 (not really) </option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5 (100%)</option>
+				</select>
+
+            <h2> Q10. </h2>
+            <div> Cheat days forever! </div>
+              	<select id="Q10" name="CFlist" form="CF_form">
+              		<option value="">select an option</option>
+  					<option value="1 (not really)">1 (not really) </option>
+ 					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5 (100%)</option>
+				</select>
+
+              <button id="submit" type="submit" class="btn btn-primary submit">Submit</button>  
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">Friends Link</a> | <a href="/api/friends">API Friends List</a> | <a href="https://github.com/JessieRhodes/friendfinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
+<!-- javascript to handle how form is sent to server -->
+<script type="text/javascript">
+
+    //Front-end Javascript which "POSTS" our form data to our express server. When the user hits submit, jQuery grabs all of the fields then sends a post request to our api. Our api recognizes the route (/api/friend)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $("#submit").on("click", function(e) {
+      e.preventDefault();
+      // Here we grab the form elements
+      var newFriend = {
+
+      	name: $("#CF_name").val().trim(),
+      	photo: $("#CF_photo").val().trim(),
+        scores: [Q1.value, Q2.value, Q3.value, Q4.value, Q5.value, Q6.value, Q7.value, Q8.value, Q9.value, Q10.value]
+        
+      };
+
+      console.log(newFriend);
+
+      var currentURL = window.location.origin;
+
+      $.post(currentURL + "/api/friends", newFriend,
+        function(data) {
+
+          if (data) {
+            alert("Meet your new friend!");
+          }
+
+          else {
+            alert("Better keep working out...");
+          }
+        });
+
+    });
+
+</script>
