@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="survey-styles.css"></style>
+	<!-- skeleton stylesheet -->
+	<link rel="stylesheet" type="text/css" href="skeleton.css"></style>
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Ubuntu:300,300i" rel="stylesheet">
+	<title>Survey Questions</title>
+</head>
+<body>
+	<div class="container">
+		<div id="header">
+			<h1>Survey Questions</h1>
+		</div>
+
+		<form>
+		  <div class="row">
+		    <div class="twelve columns">
+		      <label for="name">What's your name?</label>
+		      <input class="u-full-width" type="text" id="name">
+
+		      <label for="image">What is your best attribute?</label>
+		      <input class="u-full-width" type="text" id="image">
+
+		      <label for="q1">I love working out</label>
+		      <select class="u-half-width" id="q1">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <label for="q2">Coffee is the best</label>
+		      <select class="u-half-width" id="q2">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <label for="q3">I drink only beer</label>
+		      <select class="u-half-width" id="q3">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <label for="q4">I talk a lot</label>
+		      <select class="u-half-width" id="q4">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <label for="q5">I love swimming</label>
+		      <select class="u-half-width" id="q5">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <label for="q6">Rock climbing is my jam</label>
+		      <select class="u-half-width" id="q6">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <label for="q7">I don't like big crowds of people</label>
+		      <select class="u-half-width" id="q7">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <label for="q8">I want a big family</label>
+		      <select class="u-half-width" id="q8">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <label for="q9">I love traveling</label>
+		      <select class="u-half-width" id="q9">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <label for="q10">I sleep in a lot</label>
+		      <select class="u-half-width" id="q10">
+		        <option value="1">1 (Strongly Disagree)</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5 (Strongly Agree)</option>
+		      </select>
+
+		      <div class="twelve columns">
+		      <br>
+		      <input class="button-primary" type="submit" id="submit">
+		      </div>
+
+		</form>
+		  </div>
+
+	</div>
+
+<!-- border divs-->
+<div id="top">
+</div>
+<div id="bottom">
+</div>
+<div id="left">
+</div>
+<div id="right">
+</div>
+
+</body>
+
+<!-- link to jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- link to javascrip file
+<script type="text/javascript" src="assets/javascript/app.js"></script>-->
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+    // In this code below we create the Front-end Javascript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $("#submit").on("click", function() {
+
+      // Here we grab the form elements
+      var newFriend = {
+        name: $("#name").val().trim(),
+        image: $("#image").val().trim(),
+        scores: [parseInt(q1.value), parseInt(q2.value), parseInt(q3.value), parseInt(q4.value), parseInt(q5.value), parseInt(q6.value), parseInt(q7.value), parseInt(q8.value), parseInt(q9.value), parseInt(q10.value)]
+      };
+
+      parseInt($('#myInput').val(), 10);
+
+ //      var newFriendScores = [];
+ //      toInteger function(scores) {
+	// 	var result = scores.map(Number);
+	// 	newFriendScores.push(result);
+	// 	console.log(newFriendScores[0]);
+	// };
+
+      console.log(newFriend.scores);
+
+      // This line is the magic. It"s very similar to the standard ajax function we used.
+      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+      // depending on if a tables is available or not.
+
+      // Here we get the location of the root page.
+      // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
+      var currentURL = window.location.origin;
+
+      $.post(currentURL + "/api/friends", newFriend,
+        function(data) {
+
+       // Clear the form when submitting
+       $("#name").val("");
+       $("#image").val("");
+       $("#q1").val("");
+       $("#q2").val("");
+       $("#q3").val("");
+       $("#q4").val("");
+       $("#q5").val("");
+       $("#q6").val("");
+       $("#q7").val("");
+       $("#q8").val("");
+       $("#q9").val("");
+       $("#q10").val("");
+
+       });
+
+      return false;
+
+    });
+
+</script>
+
+</html>
