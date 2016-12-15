@@ -1,9 +1,9 @@
 body {
-	background-color: #A7EBC7;
+	background-color: white;
 }
 
 h1 {
-	font-family: 'Bungee', cursive;
+	font-family: 'Aref Ruqaa', serif;
 	font-size: 85px !important;
 	color: #FFF;
 	letter-spacing: 4px;
@@ -12,7 +12,7 @@ h1 {
 }
 
 h4 {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Aref Ruqaa', serif;
 	font-size: 20px !important;
 	color: #FFF;
 	text-transform: uppercase
@@ -37,6 +37,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+	font-family: 'Aref Ruqaa', serif;
   display: inline-block;
   height: 38px;
   padding: 0 30px;

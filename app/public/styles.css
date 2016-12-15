@@ -1,5 +1,5 @@
 html { 
-  background: url("fistbump") no-repeat center center fixed; 
+  background: url("highfive") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-	font-family: 'Bungee', cursive;
+	font-family: 'Aref Ruqaa', serif;
 	font-size: 85px !important;
 	color: black;
 	letter-spacing: 4px;
@@ -19,7 +19,7 @@ h1 {
 }
 
 h4 {
-	font-family: 'Bungee', sans-serif;
+	font-family: 'Aref Ruqaa', serif;
 	font-size: 20px !important;
 	color: black;
 	text-transform: uppercase
