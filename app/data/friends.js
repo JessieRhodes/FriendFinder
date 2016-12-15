@@ -1,8 +1,29 @@
 var friendArray = [
 	{
-    name: "Christina",
-    image: "A black and white picture of me in a tree",
+    name: "Jess",
+    image: "me drinking coffee",
     scores: ["2", "3", "5", "4", "3", "1", "1", "2", "4", "5"]
+    }
+];
+var friendArray = [
+	{
+    name: "Josh",
+    image: "me riding bikes",
+    scores: ["2", "4", "1", "4", "1", "3", "1", "4", "4", "1"]
+    }
+];
+var friendArray = [
+	{
+    name: "Clara",
+    image: "me writing poetry",
+    scores: ["1", "3", "3", "1", "4", "1", "1", "4", "4", "5"]
+    }
+];
+var friendArray = [
+	{
+    name: "Nellie",
+    image: "me playing with puppies",
+    scores: ["5", "3", "5", "5", "5", "1", "3", "2", "4", "3"]
     }
 ];
 
